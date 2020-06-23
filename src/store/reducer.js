@@ -12,16 +12,20 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         age: state.age + action.value,
-        history: state.history.concat({ age:state.age + action.value })
+        history: state.history.concat({ id:Math.random(), 
+                                        age:state.age + action.value 
+                                      })
       }
-      break;
+      break;    
 
-    case "AGE_DOWN":
+    case "AGE_DOWN":  
       
       return {
         ...state,
         age: state.age + action.value,
-        history: state.history.concat({ age:state.age - action.value })
+        history: state.history.concat({ id:Math.random(),
+                                        age:state.age - action.value 
+                                      })
       }
       break;
       break;
