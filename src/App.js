@@ -18,7 +18,7 @@ class App extends Component {
           <ul>
             {
               this.props.history.map(el =>(
-                <li>
+                <li className="historyItem">
                   {el.age}
                 </li>
               ))
